@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #48494b;
+  background-image: linear-gradient(to bottom, #48494b, black)
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cyan {
+  color: #14a3c7
+}
+
+h1 {
+  margin: 0 0 40px;
+}
+
+h2 {
+  margin: 0 0 80px;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+  height: 200px;
+  margin-bottom: 16px;
+}
+
+.company__logo {
+  width: 500px;
+  height: 200px;
+  max-height: 50vh;
+  padding: 16px 8px;
+}
+
+
+
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav__link {
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #14a3c7;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__link--primary {
+  border: 2px solid #14a3c7;
+  border-radius: 24px;
+  background-color: #14a3c7;
+  color:white;
+  padding: 8px 16px;
+}
+
+.nav__link--primary:hover {
+  text-decoration: none;
+}
+
+.logo {
+  width: 160px;
+}
+
+/* LANDING PAGE */
+#landing {
+  padding: 40px 20px 0;
+}
+
+.landing__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*.section__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+
+.section__title--main {
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.section__sub--title {
+  font-size: 30px;
+  letter-spacing: 2px;  
+}
+
+.search__bar--wrapper {
+  display: flex;
+  flex: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+}
+
+.search__bar {
+  width: 600px; 
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 16px;
+  padding: 0 15px 0 25px;
+  font-size: 24px;
+}
+
+.search__btn {
+  width: 200px;
+  height: 60px;
+  font-size: 24px;
+  border: 2px solid #14a3c7;
+  border-radius: 16px;
+  background-color: #14a3c7;
+  color: white;
+}
+
+.fa-spinner {
+  font-size: 36px;
+}
+
+.landing__img--wrapper {
+  padding: 60px 0;
+}
+
+.landing__img {
+  width: 650;
+  height: 650px;
+}
+

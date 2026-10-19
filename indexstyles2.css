@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+body {
+  background-color: #48494b;
+}
+
+
+/* NAVIGATION */
+
+nav {
+  height: 200px;
+  display: flex;
+  
+}
+
+.navbar__container {
+  background-image: url(./assets/camera.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.main__nav {
+  background-color: transparent;
+}
+
+.company__logo {
+  width: 500px;
+  height: 200px;
+  max-height: 50vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav__link {
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #14a3c7;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__link--primary {
+  border: 2px solid #14a3c7;
+  border-radius: 24px;
+  background-color: #14a3c7;
+  color:white;
+  padding: 8px 16px;
+}
+
+.nav__link--primary:hover {
+  text-decoration: none;
+}
+
+.logo {
+  width: 160px;
+}
+
+/* LANDING PAGE */
+
