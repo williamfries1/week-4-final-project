@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  
 }
 
 
@@ -13,7 +12,6 @@ body {
   background-color: #48494b;
   background-image: linear-gradient(to bottom, #48494b, black);
   background-attachment: fixed;
-
 }
 
 a {
@@ -39,12 +37,20 @@ li {
 /* NAVIGATION */
 
 nav {
-  height: 200px;
   display: flex;
-  
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .navbar__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url(./assets/movies-auditorium-category-tss.webp);
   background-size: cover;
   background-position: center;
@@ -52,27 +58,13 @@ nav {
   padding: 20px 0;
   width: 100%;
   max-width: 1200px;
-}
-
-.main__nav {
-  background-color: transparent;
+  margin: 0 auto;
 }
 
 .company__logo {
   width: 500px;
   height: 200px;
   max-height: 50vh;
-}
-
-
-.nav__container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .nav__link {
@@ -178,9 +170,11 @@ nav {
 .loading-container {
   width: 100%;
   height: 4px;
+  max-width: 1200px;
   background-color: #e0e0e0;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .loading-line {
