@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Best Movie Site Ever!</title>
     <link rel="stylesheet" href="indexstyles1.css" />
-    <script src="https://kit.fontawesome.com/49bf7b0baf.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/49bf7b0baf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header id="nav__bar">
-      <nav>
+      <nav class="sidebar">
         <div class="nav__container">
           <img src="./assets/logomoviesite.jpg" class="company__logo" />
           <ul class="nav__links">
@@ -17,44 +21,48 @@
               <a href="" class="nav__link">Home</a>
             </li>
             <li>
-              <a href="" class="nav__link">Find Your Movie</a>
+              <a href="index2.html" target="_blank" class="nav__link">Find Your Movie</a>
             </li>
             <li>
               <a href="" class="nav__link nav__link--primary">Contact</a>
             </li>
           </ul>
         </div>
-        <button class="btn__contact"></button>
       </nav>
     </header>
     <section id="landing">
-      <div class="landing__container">
+      <div class="landing__container slide__section">
         <div class="section__title">
           <h1 class="section__title--main cyan">
             Most searched movie platform <br />in the United States.
           </h1>
         </div>
-        <div class="section__subtitle">
+        <div class="section__subtitle slide__section">
           <h2 class="section__sub--title">
             FIND ALL YOUR MOVIE NEEDS WITH
             <span class="cyan">IT'S SHOWTIME</span>
           </h2>
         </div>
-        <div class="search__bar--wrapper">
+        <div class="search__bar--wrapper slide__section">
           <input
             type="text"
             placeholder="Search by Title, Year, or Plot"
             class="search__bar"
           />
-          <button class="search__btn">
+          <button id="search__btn-page" class="search__btn click" onclick="window.location.href = 'index2.html'">Away we go!
             <i class="fa-solid fa-spinner"></i>
           </button>
-            
         </div>
-        <figure class="landing__img--wrapper">
-          <img src="./assets/scottpilgrimmontage.webp" alt="" class="landing__img">
-        </figure>
-      </div>
+      </div>      
     </section>
+    <div class="figure__wrapper slide__section-left">
+       <figure class="landing__img--wrapper">
+          <img
+            src="./assets/scottpilgrimmontage.webp"
+            alt=""
+            class="landing__img"
+          />
+        </figure>
+    </div>
   </body>
 </html>

@@ -5,11 +5,15 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  
 }
 
 
 body {
   background-color: #48494b;
+  background-image: linear-gradient(to bottom, #48494b, black);
+  background-attachment: fixed;
+
 }
 
 
@@ -92,8 +96,17 @@ li {
   text-decoration: none;
 }
 
-.logo {
-  width: 160px;
+.nav__search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__title {
+
+  color: white;
+  padding: 40px 0 40px;
 }
 
 /* LANDING PAGE */

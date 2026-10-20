@@ -1,9 +1,7 @@
-function openMenu() {
-  document.body.classList += " menu--open";
+let button = document.getElementById("search__btn-page");
+
+function redirectToPage() {
+  window.location.href = "index2.html";
 }
 
-function closeMenu() {
-  document.body.classList.remove("menu--open");
-}
-
-//https://www.omdbapi.com/?apikey=e8b230c6&s=house
+button.addEventListener('click', redirectToPage);
