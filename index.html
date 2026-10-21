@@ -3,66 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Best Movie Site Ever!</title>
-    <link rel="stylesheet" href="indexstyles1.css" />
-    <script
-      src="https://kit.fontawesome.com/49bf7b0baf.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
+    <title>Showtime</title>
   </head>
-  <body>
-    <section id="nav__bar">
-      <nav class="sidebar">
-        <figure>
-          <img src="./assets/logomoviesite.jpg" class="company__logo" />
-        </figure>
-        <ul class="nav__link--list">
-          <li class="nav__link">
-            <a href="" class="nav__link--anchor link__hover--effect">Home</a>
-          </li>
-          <li>
-            <a href="index2.html" target="_blank" class="nav__link--anchor link__hover--effect">Find Your Movie</a>
-          </li>
-          <li class="nav__link">
-            <a href="" class="nav__link--anchor nav__link--anchor-primary">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-    <section id="landing">
-      <div class="landing__container slide__section">
-        <div class="section__title">
-          <h1 class="section__title--main cyan">
-            Most searched movie platform <br />in the United States.
-          </h1>
-        </div>
-        <div class="section__subtitle slide__section">
-          <h2 class="section__sub--title">
-            FIND ALL YOUR MOVIE NEEDS WITH
-            <span class="cyan">IT'S SHOWTIME</span>
-          </h2>
-        </div>
-        <div class="search__bar--wrapper slide__section">
+   <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="./assets/fes-logo.png"
+          alt=""
+          class="logo__img"
+          width="50px"
+        />
+        <div class="logo__title"><span>Flicker</span> Films</div>
+      </div>
+      <form class="search__form" id="searchForm">
+        <div class="search__form-group">
           <input
+            class="search__form-input"
             type="text"
-            placeholder="Search by Title, Year, or Plot"
-            class="search__bar"
+            id="searchInput"
+            placeholder="Search for movies..."
+            required
           />
-          <button id="search__btn-page" class="search__btn click" onclick="window.location.href = 'index2.html'">Away we go!
-            <i class="fa-solid fa-spinner"></i>
+          <button class="search__form-btn" type="submit">
+            <svg
+              class="search__form-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
           </button>
         </div>
-      </div>      
-    </section>
-    <div class="figure__wrapper slide__section-left">
-       <figure class="landing__img--wrapper">
-          <img
-            src="./assets/scottpilgrimmontage.webp"
-            alt=""
-            class="landing__img"
-          />
-        </figure>
-    </div>
+      </form>
+    </nav>
+
+    <main>
+      <div class="controls">
+        <p id="resultsInfo" class="resultsInfo"><span>Showing: </span></p>
+        <div>
+          <label for="sortSelect">Sort:</label>
+          <select id="sortSelect">
+            <option value="default">Default</option>
+            <option value="a-z">A - Z</option>
+            <option value="z-a">Z - A</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="movies__grid" id="moviesGrid">
+        
+      </div>
+    </main>
   </body>
 </html>
