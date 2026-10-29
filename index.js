@@ -63,9 +63,7 @@ function displayMovies(movies) {
 
     return `
     <div class="movie__card">
-      ${poster ? `<img class="movie__card-img" src="${poster}" alt="${movie.Title}">` : `<div class="movie__card-poster--placeholder">
-          Movie Poster<br />Not Available
-        </div>`}
+      ${poster ? `<img class="movie__card-img" src="${poster}" alt="${movie.Title}">` : `<div class="movie__card-poster--placeholder">Movie Poster <br>Not Available</div>`}
       <h2 class="movie__card-title">${movie.Title}</h2>
       <p class="movie__card-year">${movie.Year}</p>
     </div>
@@ -73,4 +71,13 @@ function displayMovies(movies) {
   }).join('');
 
   moviesGrid.innerHTML = movieResults;
+
+  moviesGrid.querySelectorAll('movie__card-img').forEach(img => {
+    img.addEventListener('error', () => {
+      const placeholder = document.createElement('div');
+      placeholder.className = 'movie__card-poster--placeholder';
+      placeholder.innerHTML = 'Movie Poster<br>Not Available';
+      img.replaceWith(placeholder);
+    });
+  });
 }
