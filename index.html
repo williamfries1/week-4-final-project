@@ -3,55 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reel Flix || Movie Search</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
-    <title>Showtime</title>
   </head>
   <body>
     <nav>
-      <div class="nav__logo">
-        <img
-          src="./assets/fes-logo.png"
-          alt=""
-          class="nav__logo-img"
-          width="50px"
-        />
-        <div class="navbar__title"><span>Flicker</span> Films</div>
+      <div class="logo">
+        <span class="logo__img" width="50px">🎬</span>
+        <div class="logo__title"><span>Reel</span> Flix</div>
       </div>
-      <form class="nav__search-form" id="searchForm">
-        <div class="nav__search-form--group">
+      <form class="search__form" id="searchForm">
+        <div class="search__form-group">
           <input
-            class="nav__search-form--input"
+            class="search__form-input"
             type="text"
             id="searchInput"
-            placeholder="Search for movies..."
+            placeholder="Search for your favorite movies..."
             required
           />
-          <button class="nav__search-form--btn" type="submit">
-            <svg
-              class="nav__search-form--icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="11" cy="11" r="7"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </button>
+          <button class="search__form-btn" type="submit">🔍</button>
         </div>
       </form>
     </nav>
-
     <main>
-      <div class="movie__filter">
+      <div class="filters">
         <p id="resultsInfo" class="resultsInfo"><span>Showing: </span></p>
         <div>
-          <label for="sortSelect">Sort:</label>
-          <select id="filter__select">
-            <option value="Select">Select</option>
+          <label for="filterSelect">Sort:</label>
+          <select id="filterSelect">
+            <option value="default">Default</option>
             <option value="a-z">A - Z</option>
             <option value="z-a">Z - A</option>
             <option value="newest">Newest</option>
@@ -59,73 +40,13 @@
           </select>
         </div>
       </div>
-
       <div class="movies__grid" id="moviesGrid">
-        <div class="movie__card">
-          <img
-            class="movie__card-img"
-            src="https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
-            alt=""
-          />
-          <h2 class="movie__card-title">The Avengers</h2>
-          <p class="movie__card-year">2012</p>
-        </div>
-        <div class="movie__card">
-          <img
-            class="movie__card-img"
-            src="https://m.media-amazon.com/images/M/MV5BMWEyNDM2ZmQtMmFkNi00MTQ1LTk1MjItMzdlZGJlYmIyYzZlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
-            alt=""
-          />
-          <h2 class="movie__card-title">Avengers: Endgame</h2>
-          <p class="movie__card-year">2019</p>
-        </div>
-        <div class="movie__card">
-          <img
-            class="movie__card-img"
-            src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_QL75_UX380_CR0,0,380,562_.jpg"
-            alt=""
-          />
-          <h2 class="movie__card-title">Avengers: Infinity War</h2>
-          <p class="movie__card-year">2018</p>
-        </div>
-        <div class="movie__card">
-          <img
-            class="movie__card-img"
-            src="https://m.media-amazon.com/images/M/MV5BODBhYTg1NGQtNGVmNS00ZTdiLThjYTYtZDFkNzRiNTZmNDZjXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
-            alt=""
-          />
-          <h2 class="movie__card-title">Avengers: Age of Ultron</h2>
-          <p class="movie__card-year">2015</p>
-        </div>
-        <div class="movie__card">
-          <img
-            class="movie__card-img"
-            src="https://m.media-amazon.com/images/M/MV5BZTA4ZmZlZWQtZDRlYS00ZWZhLTk0MzEtYjExMGIzMTBlZDNlXkEyXkFqcGc@._V1_SX300.jpg"
-            alt=""
-          />
-          <h2 class="movie__card-title">The Avengers</h2>
-          <p class="movie__card-year">1998</p>
-        </div>
-        <div class="movie__card-poster--placeholder">
-          Movie Poster<br />Not Available
-        </div>
-        <div class="movie__card-poster--placeholder">
-          Movie Poster<br />Not Available
-        </div>
-        <div class="movie__card-poster--placeholder">
-          Movie Poster<br />Not Available
-        </div>
-        <div class="movie__card-poster--placeholder">
-          Movie Poster<br />Not Available
-        </div>
-        <div class="movie__card-poster--placeholder">
-          Movie Poster<br />Not Available
-        </div>
+        
       </div>
     </main>
 
     <footer>
-      <p>Created by William Fries III. Powered by OMDBapi.</p>
+      <p>Created by William Fries III Powered by OMDBAPI.</p>
     </footer>
   </body>
 </html>
